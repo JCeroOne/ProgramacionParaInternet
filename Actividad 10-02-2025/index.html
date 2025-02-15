@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fa25ae7139.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/scripts.js" defer></script>
+</head>
+<body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong>JCWPC</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Análisis meteorológico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pronósticos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Avisos y alertas activos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Aviso de potencial de tormentas #003</a></li>
+                            <li><a class="dropdown-item" href="#">Alerta por tormenta #045</a></li>
+                            <li><a class="dropdown-item" href="#">Alerta por tormenta #046</a></li>
+                            <li><a class="dropdown-item" href="#">Alerta por tormenta #047</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Aviso de calor extremo #008</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ciclones tropicales
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item disabled">No hay ciclones activos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Ciclones anteriores</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Climatología</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="map">
+            <div class="alert alert-danger" role="alert">
+                <strong><i class="fa-solid fa-triangle-exclamation"></i> Aviso por calor extremo #008:</strong> Para esta semana se esperan temperaturas máximas de 35 - 38°C en el noroeste de la Península.<br/>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <strong><i class="fa-solid fa-triangle-exclamation"></i> Aviso de potencial de tormentas #003:</strong> Se esperan tormentas fuertes en el centro, oriente y sur de la Península para este martes.<br/>
+            </div>
+            <h1>Avisos activos</h1>
+            <p>Haz click sobre un polígono para ver más detalles.</p>
+            <div id="map"></div>
+        </section>
+    </main>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header text-bg-danger">
+            <strong class="me-auto"><i class="fa-solid fa-triangle-exclamation"></i> Nueva alerta</strong>
+            <small>11 min.</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            <strong>Alerta de tormenta #047</strong> emitida para el sur de Campeche.
+          </div>
+        </div>
+      </div>
+</body>
+</html>

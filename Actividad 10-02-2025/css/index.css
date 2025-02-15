@@ -1,0 +1,37 @@
+section.map {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+section.map .alert {
+    text-align: left;
+    font-size: 20px;
+}
+section.map h1 {
+    font-weight: bold;
+} section.map > p {
+    font-size: 24px;
+}
+section.list-map {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#map {
+    flex: 0 0 60%;
+    max-width: 800px;
+    display: block;
+    aspect-ratio: 1.608;
+    margin: 10px auto;
+}
+.advisory-popup h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+} .advisory-popup p {
+    font-size: 18px;
+} .advisory-popup a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
