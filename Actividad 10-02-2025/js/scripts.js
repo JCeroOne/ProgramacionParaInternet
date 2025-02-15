@@ -9,7 +9,7 @@ setTimeout(() => {
 // MAP
 
 const map = L.map("map").setView([21.110380321984294, -89.61122196364184], 7);
-L.tileLayer('https://api.mapbox.com/styles/v1/jceroone/clrz25kzw01bc01nl64nl6xlx/tiles/512/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamNlcm9vbmUiLCJhIjoiY2tpaTcxZjBtMGlobTJ4cDh1MGxzamcxcCJ9.47abDMMa9gf9if7nsj4BqA', {
+L.tileLayer(`https://api.mapbox.com/styles/v1/jceroone/clrz25kzw01bc01nl64nl6xlx/tiles/512/{z}/{x}/{y}?access_token=${API}`, {
     maxZoom: 19,
     minZoom: 6,
     tileSize: 512,
