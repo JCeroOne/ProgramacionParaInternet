@@ -1,5 +1,8 @@
 body {
-    background-color: #333;
+    --background-color: #222;
+    --color: white;
+    background-color: var(--background-color);
+    color: var(--color);
 }
 nav.navbar {
     justify-content: space-evenly;
@@ -21,16 +24,52 @@ header .overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(0deg, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+    background-image: linear-gradient(0deg, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0.5));
 }
 header .content {
     position: absolute;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 } header .content h1 {
-    color: white;
+    color: var(--color);;
     font-weight: bold;
     font-size: 50px;
     text-align: center;
+}  header .content p {
+    color: var(--color);;
+    font-size: 24px;
+    text-align: center;
+}
+main .info-row {
+    width: 100%;
+    padding: 20px 5%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+} main .info-row:nth-child(2n){
+    background-color: #333;
+    box-shadow: 0 0 40px 40px #333;
+}
+main .info-row div {
+    flex: 0 0 70%;
+    padding: 0 5%;
+    box-sizing: border-box;
+} main .info-row h1 {
+    font-size: 50px;
+    color: var(--color);
+} main .info-row p {
+    font-size: 24px;
+    color: var(--color);
+    text-align: justify;
+}
+main .info-row img {
+    display: block;
+    flex: 0 0 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    filter: contrast(1.1);
+    object-fit: cover;
+    aspect-ratio: 1;
 }
