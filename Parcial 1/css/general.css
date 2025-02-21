@@ -35,25 +35,28 @@ header .content {
 } header .content h1 {
     color: var(--color);;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
-}  header .content p {
+} header .content p {
     color: var(--color);;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
 }
 main .info-row {
     width: 100%;
-    padding: 20px 5%;
+    padding: 0 5%;
+    margin: 60px 0;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    --text-width: 75%;
+    --btn-color: rgb(0, 175, 79);
 } main .info-row:nth-child(2n){
     background-color: #333;
     box-shadow: 0 0 40px 40px #333;
 }
 main .info-row div {
-    flex: 0 0 70%;
+    flex: 0 0 var(--text-width);
     padding: 0 5%;
     box-sizing: border-box;
 } main .info-row h1 {
@@ -63,10 +66,21 @@ main .info-row div {
     font-size: 24px;
     color: var(--color);
     text-align: justify;
+} main .info-row button {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: var(--btn-color);
+    border: 3px solid var(--btn-color);
+    border-radius: 10px;
+    transition: 0.25s;
+} main .info-row button:hover {
+    background-color: transparent;
+    color: var(--btn-color);
 }
 main .info-row img {
     display: block;
-    flex: 0 0 30%;
+    flex: 0 0 calc(100% - var(--text-width));
     overflow: hidden;
     border-radius: 10px;
     filter: contrast(1.1);
