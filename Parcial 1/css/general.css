@@ -46,16 +46,25 @@ nav .dropdown-section {
     text-decoration: underline;
     text-align: center;
 }
+main section > .section-header {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-transform: none;
+    text-decoration: underline;
+}
 main .info-row {
     width: 100%;
     padding: 0 5%;
     margin: 80px 0;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     --text-width: 75%;
     --btn-color: rgb(0, 175, 79);
-} main .info-row:nth-child(2n){
+} main .info-row:nth-child(2n - 1){
     background-color: #333;
     box-shadow: 0 0 40px 40px #333;
 }
@@ -103,4 +112,15 @@ footer {
 footer p {
     width: 80%;
     margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+    main .info-row div {
+        flex: 0 0 100%;
+        padding: 40px 5%;
+        box-sizing: border-box;
+    }
+    main .info-row img {
+        flex: 0 0 100%;
+        max-width: 300px;
+    }
 }

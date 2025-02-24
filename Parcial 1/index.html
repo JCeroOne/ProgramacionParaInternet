@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JCEMS | Inicio</title>
     <script src="https://kit.fontawesome.com/fa25ae7139.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -12,49 +12,56 @@
 <body data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="#">JCWFS</a>
+            <a class="navbar-brand" href="#">JCEMS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i> Home
+                        <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i> Inicio
                         <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-tag"></i> Pricing</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Acerca de</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-cloud"></i> Atmosphere</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-cloud"></i> Aire</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Overview</a>
+                            <a class="dropdown-item" href="#">Todos los modelos</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">JCWFS Skew-T log-P</a>
+                            <a class="dropdown-item dropdown-section"><strong>Atmósfera</strong></a>
+                            <a class="dropdown-item" href="#">JCEMS Skew-T log-P</a>
+                            <a class="dropdown-item" href="#">JCEMS Mayab</a>
+                            <a class="dropdown-item" href="#">JCEMS NEMx</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item dropdown-section"><strong>Regional models</strong></a>
-                            <a class="dropdown-item" href="#">JCWFS Mayab</a>
-                            <a class="dropdown-item" href="#">JCWFS NEMx</a>
+                            <a class="dropdown-item dropdown-section"><strong>Aerodinámica</strong></a>
+                            <a class="dropdown-item" href="#">JCEMS Aerocast</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-tractor"></i> Agriculture</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-droplet"></i> Agua</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Overview</a>
+                            <a class="dropdown-item" href="#">Todos los modelos</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">JCWFS Hydrocast</a>
-                            <a class="dropdown-item" href="#">JCWFS Firecast</a>
+                            <a class="dropdown-item" href="#">JCEMS Hydrocast</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown float-end">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-language"></i> Language</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-fire"></i> Fuego</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">English</a>
-                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="#">Todos los modelos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">JCEMS Firecast</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-seedling"></i> Tierra</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Todos los modelos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">JCEMS Earthcast</a>
                         </div>
                     </li>
                 </ul>
@@ -64,26 +71,43 @@
     <header>
         <div class="overlay"></div>
         <div class="content">
-            <h1>JCWFS</h1>
-            <p>Practical solutions to weather-related issues</p>
+            <h1>JCEMS</h1>
+            <p>Modelando los cuatro elementos aristotélicos para fines prácticos</p>
         </div>
     </header>
     <main>
-        <div class="info-row">
-            <div>
-                <h1>Agriculture</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe hic, quaerat magni voluptatem porro et dolores adipisci doloribus! Quis, assumenda dolor. Quibusdam corporis nesciunt perferendis aut placeat deserunt ab?</p>
-                <button>View models for Agriculture</button>
+        <section>
+            <h1 class="section-header">Soluciones prácticas para...</h1>
+            <div class="info-row">
+                <div>
+                    <h1>Arquitectura</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe hic, quaerat magni voluptatem porro et dolores adipisci doloribus! Quis, assumenda dolor. Quibusdam corporis nesciunt perferendis aut placeat deserunt ab?</p>
+                    <button>Ver más sobre arquitectura</button>
+                </div>
+                <img src="./img/0.jpg">
+            </div><div class="info-row">
+                <img src="./img/0.jpg">
+                <div>
+                    <h1>Agricultura</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe hic, quaerat magni voluptatem porro et dolores adipisci doloribus! Quis, assumenda dolor. Quibusdam corporis nesciunt perferendis aut placeat deserunt ab?</p>
+                    <button>Ver más sobre agricultura</button>
+                </div>
+            </div><div class="info-row">
+                <div>
+                    <h1>Gestión forestal</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa molestiae voluptates, obcaecati iure ipsam laboriosam mollitia molestias libero exercitationem? Nostrum iste numquam totam labore illo soluta ullam vitae amet velit.</p>
+                    <button>Ver más sobre gestión forestal</button>
+                </div>
+                <img src="./img/1.jpg">
+            </div><div class="info-row">
+                <img src="./img/1.jpg">
+                <div>
+                    <h1>Meteorología</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa molestiae voluptates, obcaecati iure ipsam laboriosam mollitia molestias libero exercitationem? Nostrum iste numquam totam labore illo soluta ullam vitae amet velit.</p>
+                    <button>Ver más sobre meteorología</button>
+                </div>
             </div>
-            <img src="./img/0.jpg">
-        </div><div class="info-row">
-            <img src="./img/1.jpg">
-            <div>
-                <h1>Meteorology</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa molestiae voluptates, obcaecati iure ipsam laboriosam mollitia molestias libero exercitationem? Nostrum iste numquam totam labore illo soluta ullam vitae amet velit.</p>
-                <button>View models for Meteorology</button>
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident non quia, repellat eos totam facere unde ut officiis ad pariatur aliquam vel alias vitae commodi qui eligendi rem necessitatibus deleniti!</p>
