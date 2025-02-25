@@ -5,7 +5,10 @@ body {
     color: var(--color);
 }
 nav.navbar {
-    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 .navbar-brand {
     font-weight: 800;
@@ -49,9 +52,9 @@ nav .dropdown-section {
 main section > .section-header {
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: bold;
     text-transform: none;
-    text-decoration: underline;
 }
 main .info-row {
     width: 100%;
